@@ -7,13 +7,10 @@ concurrency:
 
 on:
   push:
-    branches:[ master, main ]
-  workflow_dispatch:
-      # choose your default branch
-      - master
-      - main
+    branches: [ master, main ]
     paths-ignore:
       - '*.md'
+  workflow_dispatch:
 
 jobs:
   build:
